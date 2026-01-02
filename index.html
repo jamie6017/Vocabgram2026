@@ -1,0 +1,67 @@
+
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <title>vocabgram</title>
+
+    <!-- 暫用 Tailwind CDN：先確保樣式正常；之後可改為本地 Tailwind 設定 -->
+    https://cdn.tailwindcss.com</script>
+    <script>
+      // 可選：稍微補你用到的色票，讓外觀更接近
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              zinc: {
+                700: "#3f3f46",
+                800: "#27272a",
+                900: "#18181b",
+              },
+              indigo: {
+                400: "#818cf8",
+                500: "#6366f1",
+              },
+              emerald: {
+                400: "#34d399",
+                500: "#10b981",
+                950: "#022c22",
+              },
+              red: {
+                500: "#ef4444",
+                950: "#450a0a",
+              },
+              yellow: {
+                400: "#facc15",
+              },
+              pink: {
+                500: "#ec4899",
+              },
+              purple: {
+                600: "#7c3aed",
+              },
+              black: "#000000",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      :root { color-scheme: dark; }
+      html, body, #root { height: 100%; margin: 0; background: #000; }
+      body { padding-bottom: env(safe-area-inset-bottom); }
+      .brand-script { font-family: "Brush Script MT", cursive; }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <!-- 重要：改成引用外部 .jsx 檔，讓 JSX 由 Vite 正確轉譯 -->
+    <script typecript>
+  </body>
+</html>
